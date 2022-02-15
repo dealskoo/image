@@ -33,10 +33,13 @@
             "homepage": "https://www.dealskoo.com"
         }
     ],
+    "scripts": {
+        "post-autoload-dump": [
+            "@php ./vendor/bin/testbench package:discover --ansi"
+        ]
+    },
     "require": {
         "php": ">=7.1",
-        "dealskoo/admin": "dev-master",
-        "dealskoo/country": "dev-master",
         "laravel/framework": ">=7.20"
     },
     "require-dev": {
